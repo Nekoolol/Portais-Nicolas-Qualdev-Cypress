@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Morpion JS avec module et classe</title>
+    <link rel="stylesheet" href="../css/morpion.css" />
+  </head>
+  <body>
+    <div class="zone_jeu">
+      <p id="score"></p>
+      <p id="messages"></p>
+      <table id="table_morpion"></table>
+
+      <div>
+        <label for="taille">Taille de la grille : </label>
+        <input type="text" id="taille" class="saisie_taille" value="3" />
+        Mode de jeu :
+        <input type="radio" id="simple" name="mode" value="simple" />
+        <label for="simple">Simple</label>
+        <input
+          type="radio"
+          id="complet"
+          name="mode"
+          value="Complet"
+          checked="checked"
+        />
+        <label for="complet">Complet</label>
+        <input type="button" id="btn_reset" value="Rejouer" />
+      </div>
+    </div>
+
+    <script src="../js/jeu_morpion.js" type="module"></script>
+  </body>
+</html>
