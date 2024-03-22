@@ -1,8 +1,8 @@
 {
-  "name": "Recherche(s) stage(s)",
+  "name": "Recherche stage",
   "info": [
     {
-      "nom": "Mot Clef : API/IA",
+      "nom": "Mot Clef API IA",
       "informations": [
         {
           "nomEnt": "Aliae ",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "nom": "Ville : Paris",
+      "nom": "Ville  Paris",
       "informations": [
         {
           "nomEnt": "Airparif ",
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "nom": "Entreprise : CERAH",
+      "nom": "Entreprise CERAH",
       "informations": [
         {
           "nomEnt": "CERAH ",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "nom": "Pays : Angleterre",
+      "nom": "Pays Angleterre",
       "informations": [
         {
           "nomEnt": "Mariana Capital Market LLP",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "nom": "Section : BUT2RA",
+      "nom": "Section BUT2RA",
       "informations": [
         {
           "nomEnt": "AESTRIA ",
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "nom": "Année : 2023",
+      "nom": "Année 2023",
       "informations": [
         {
           "nomEnt": "Adimeo ",
@@ -1016,4 +1016,4 @@
       ]
     }
   ]
-};
+}

@@ -17,7 +17,6 @@ Cypress.Commands.add('createData', (name) => {
     const ville = $row.find('td').eq(1).text();
     const motsClefs = $row.find('td').eq(2).text();
     const nbStage = $row.find('td').eq(3).text();
-
     const rowData = {
       nomEnt: nomEnt,
       ville: ville,
@@ -38,12 +37,12 @@ Cypress.Commands.add('createData', (name) => {
 
 Cypress.Commands.add('createJson', () => {
   const allDataJson = {
-    name : "Recherche(s) stage(s)",
+    name : "Recherche stage",
     info : allData
   }
   const jsonData = JSON.stringify(allDataJson, null, 2);
   
-  cy.writeFile(`cypress/fixtures/data.json`, `${jsonData};`).then(() => {
+  cy.writeFile(`cypress/fixtures/data.json`, `${jsonData}`).then(() => {
     cy.log('Données écrites dans test_data.js');
   });
 })
@@ -62,42 +61,42 @@ describe('recherche', () => {
     cy.get('#LogiqueValue').select("Or")
     cy.get('.btn-success').click()
 
-    cy.createData("Mot Clef : API/IA")
+    cy.createData("Mot Clef API IA")
   });
 
   it('Recherche Ville ', () => {
     cy.get('#VilleValue').select("Paris")
     cy.get('.btn-success').click()
 
-    cy.createData("Ville : Paris")
+    cy.createData("Ville  Paris")
   })
 
   it('Recherche Entreprise ', () => {
     cy.get('#EntrepriseValue').select("CERAH")
     cy.get('.btn-success').click()
 
-    cy.createData("Entreprise : CERAH")
+    cy.createData("Entreprise CERAH")
   })
 
   it('Recherche Pays ', () => {
     cy.get('#PaysValue').select("Angleterre")
     cy.get('.btn-success').click()
 
-    cy.createData("Pays : Angleterre")
+    cy.createData("Pays Angleterre")
   })
 
   it('Recherche Section ', () => {
     cy.get('#SectionValue').select("BUT2RA")
     cy.get('.btn-success').click()
 
-    cy.createData("Section : BUT2RA")
+    cy.createData("Section BUT2RA")
   })
 
   it('Recherche Année ', () => {
     cy.get('#AnneeValue').select("2023")
     cy.get('.btn-success').click()
 
-    cy.createData("Année : 2023")
+    cy.createData("Année 2023")
     cy.createJson()
   })
 
@@ -105,7 +104,7 @@ describe('recherche', () => {
     cy.get('#CPValue').select("75")
     cy.get('.btn-success').click()
 
-    cy.createJson("Département : 75");
+    cy.createJson("Département 75");
   })
 
 })

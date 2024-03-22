@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (isset($_POST['json_data'])) {
                 $json_data = $_POST['json_data'];
                 $data = json_decode($json_data, true);
 
